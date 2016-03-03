@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
   get 'hello_world', to: 'hello_world#index'
-  get 'hello_world', to: 'hello_world#index'
+
+  get 'commits/:id', to: 'commits#show'
+  get 'commits', to: 'commits#index'
+  post 'commits', to: 'commits#create'
+
+  get 'tests/:id', to: 'diff_tests#show'
+  get 'commits/:commit_id/tests', to: 'diff_tests#index'
+  post 'commits/:commit_id/tests', to: 'diff_tests#create'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
