@@ -48,9 +48,9 @@
 
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(158);
-	var Index = __webpack_require__(159);
+	var Commits = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./components/Commits\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
-	ReactDOM.render(React.createElement(Index, null), document.getElementById('entrypoint'));
+	ReactDOM.render(React.createElement(Commits, null), document.getElementById('entrypoint'));
 
 /***/ },
 /* 1 */
@@ -19652,28 +19652,6 @@
 
 	module.exports = __webpack_require__(3);
 
-
-/***/ },
-/* 159 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var React = __webpack_require__(1);
-
-	var Index = React.createClass({
-	  displayName: 'Index',
-
-	  render: function render() {
-	    return React.createElement(
-	      'div',
-	      null,
-	      'Hello world'
-	    );
-	  }
-	});
-
-	module.exports = Index;
 
 /***/ }
 /******/ ]);

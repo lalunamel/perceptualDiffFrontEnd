@@ -1,8 +1,8 @@
 let React = require('react');
 let ReactDOM = require('react-dom');
-let Index = require('./components/index');
+let Commits = require('./components/Commits');
 
 ReactDOM.render(
-  <Index />,
+  <Commits />,
   document.getElementById('entrypoint')
 );
